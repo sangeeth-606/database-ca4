@@ -12,10 +12,7 @@ mongoose.connect(process.env.MONGO_URI, {
 }).then(() => console.log('MongoDB Connected'))
   .catch(err => console.error(' MongoDB Error:', err));
 
-const publisherSchema = new mongoose.Schema({
-  name: String,
-  location: String
-});
+
 const userSchema = new mongoose.Schema({
   username:{
     type:String,
